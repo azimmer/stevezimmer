@@ -63,9 +63,27 @@ module.exports = function (grunt) {
                     dest: 'build/'
                 }]
             }
+        },
+        connect: {
+            server: {
+                options: {
+                    keepalive: true,
+                    port: 9001,
+                    hostname: "0.0.0.0",
+                    livereload: true,
+                    open: true,
+                    base: {
+                        path: 'dev/',
+                        options: {
+                            index: 'index.html'
+                        }
+                    }
+                }
+            }
         }
     });
 
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -74,4 +92,5 @@ module.exports = function (grunt) {
 
     grunt.registerTask('lint', ['jshint', 'jscs']);
     grunt.registerTask('default', ['jshint', 'jscs', 'uglify', 'cssmin', 'copy']);
+    grunt.registerTask('server', ['connect']);
 };

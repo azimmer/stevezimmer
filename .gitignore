@@ -3,3 +3,4 @@ node_modules/*
 *.min.js
 *.min.css
 .DS_Store
+npm-debug.log
