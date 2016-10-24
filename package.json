@@ -1,0 +1,36 @@
+{
+  "name": "steve-zimmer.com",
+  "version": "2.0.0",
+  "description": "SPA responsive website",
+  "main": "index.html",
+  "homepage": "http://www.steve-zimmer.com",
+  "bugs": {
+    "url": "https://github.com/azimmer/stevezimmer",
+    "email": "aurynzimmer@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azimmer/stevezimmer"
+  },
+  "scripts": {
+    "make": "grunt",
+    "lint": "grunt lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Auryn Zimmer",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-cssmin": "~1.0.1",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-uglify": "~2.0.0",
+    "grunt-jscs": "~3.0.1"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
+  },
+  "engines": {
+    "node": "6.9.0"
+  }
+}

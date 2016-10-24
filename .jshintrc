@@ -1,0 +1,17 @@
+{
+    "bitwise": true,
+    "browser": true,
+    "curly": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "esversion": 6,
+    "noarg": true,
+    "nonew": true,
+    "quotmark": "single",
+    "trailing": true,
+    "strict": true,
+    "undef": true,
+    "unused": "vars",
+    "validthis": true,
+    "immed": true
+}

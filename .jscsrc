@@ -1,0 +1,25 @@
+{
+    "disallowSpacesInCallExpression": true,
+    "validateQuoteMarks": "'",
+    "validateIndentation": 4,
+    "requireSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "case",
+        "return",
+        "try",
+        "catch",
+        "typeof"
+    ],
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSemicolons": true,
+    "requireCapitalizedConstructors": true,
+    "maximumLineLength": 110
+}
